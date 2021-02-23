@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/black_variation"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.BottomSheet">
+
+    <TextView
+        android:id="@+id/goPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="@string/go_prem"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/forUnlimitedHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goPremium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/for_unlimited"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/forUnlimitedHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/bulletPointSet1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/bullet1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/line"
+            android:layout_alignStart="@+id/forUnlimitedHistory"
+            android:background="@drawable/bullet_point"
+            android:gravity="center"
+            android:text="@string/tick"
+            android:textColor="@color/blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/point1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bullet1"
+            android:layout_alignBottom="@+id/bullet1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/bullet1"
+            android:text="@string/bullet_point1"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bulletPointSet2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bulletPointSet1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/bullet2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/bullet1"
+            android:layout_alignStart="@+id/bullet1"
+            android:background="@drawable/bullet_point"
+            android:gravity="center"
+            android:text="@string/tick"
+            android:textColor="@color/blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/bullet_point2"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bulletPointSet3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bulletPointSet2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/bullet3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/bullet_point"
+            android:gravity="center"
+            android:text="@string/tick"
+            android:textColor="@color/blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/point3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/bullet_point1"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/workoutIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/bulletPointSet3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/workout_icon" />
+
+    <Button
+        android:id="@+id/buttonTryWeeks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/button"
+        android:text="@string/button_text"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

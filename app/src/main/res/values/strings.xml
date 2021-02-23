@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Animations</string>
+    <string name="click_here">Click Here</string>
+    <string name="go_prem">Go Premium</string>
+    <string name="for_unlimited">For Unlimited History</string>
+    <string name="tick">✓</string>
+    <string name="bullet_point1">Unlimited Custom Workouts</string>
+    <string name="bullet_point2">300 exercise Movement Library</string>
+    <string name="button_text">Try 2 weeks Free</string>
+</resources>
